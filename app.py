@@ -193,8 +193,8 @@ df = None
 if data_source == "Use demo dataset (recommended)":
     try:
         df = pd.read_csv("data/test_data.csv")
-        st.success("✅ Demo dataset loaded successfully.")
-        st.info("ℹ️ You are viewing results using the built-in demo dataset.")
+        st.success("Demo dataset loaded successfully.")
+        st.info("You are viewing results using the built-in demo dataset.")
     except Exception as e:
         st.error(f"❌ Could not load demo dataset: {e}")
 
@@ -216,7 +216,7 @@ if df is not None:
         else:
             # 1. DATA INSPECTION (Head and Count)
             st.markdown("---")
-            st.header("🔍 1. Initial Data Inspection")
+            st.header("1. Initial Data Inspection")
 
             col_head, col_stats = st.columns([2, 1])
 
@@ -275,7 +275,7 @@ if df is not None:
 
                 # 3. PREDICTION EXPORT
                 st.markdown("---")
-                st.header("📤Export Fraud Predictions")
+                st.header("Export Fraud Predictions")
                 st.write("Select a model to generate a downloadable report of its findings.")
 
                 selected_model_name = st.selectbox("Choose model for export:", list(results.keys()))
