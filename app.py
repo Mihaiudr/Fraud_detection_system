@@ -33,7 +33,7 @@ try:
     rf_model = joblib.load("models/random_forest.joblib")
     xgb_model = xgb.XGBClassifier()
     xgb_model.load_model("models/xgboost_model.json")
-    mlp_model = load_model("models/mlp.keras", compile=False)
+    mlp_model = load_model("models/mlp.h5", compile=False)
 
     MODELS = {
         "Logistic Regression": lr_model,
