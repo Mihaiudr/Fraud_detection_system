@@ -1,36 +1,12 @@
-# Core
+streamlit
+
 pandas
 numpy
 scikit-learn
-scipy
-statsmodels
+joblib
 
-# Visualization
 matplotlib
 seaborn
-plotly
 
-# ML models
 xgboost
-imbalanced-learn
-tensorflow
-
-# Explainability
-shap
-lime
-
-# App
-streamlit
-
-# Notebook
-jupyter
-ipykernel
-notebook
-
-# Utilities
-tqdm
-joblib
-cloudpickle
-
-# Optional experiment tracking
-mlflow
+tensorflow-cpu
