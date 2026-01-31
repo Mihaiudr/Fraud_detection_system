@@ -11,19 +11,22 @@ https://www.kaggle.com/datasets/ealaxi/paysim1
 
 The notebook includes the full workflow:
 
-data loading and preprocessing
+Data loading and preprocessing
 
-handling class imbalance
+Exploratory data analysis
 
-training multiple models (Logistic Regression, Random Forest, XGBoost)
+Feature engineering
 
-hyperparameter tuning
+Handling class imbalance
 
-evaluation using precision, recall, F1-score, ROC curve and AUC
+Training multiple models (Logistic Regression, Random Forest, XGBoost, MultiLayer Perceptron)
+
+Hyperparameter tuning
+
+Evaluation using precision, recall, F1-score, ROC curve and AUC
 
 Because the dataset is extremely imbalanced, additional techniques such as scale_pos_weight, undersampling and SMOTE were tested to improve minority-class performance.
 
 # Best Model
 
-After comparing all models on the validation and test sets, XGBoost delivered the most balanced and reliable results, achieving a high F1-score(0.91) and an AUC of about 0.97. This model was selected as the final approach for fraud detection.
-"# Fraud_detection_system" 
+After comparing all models on the validation and test sets, XGBoost delivered the most balanced and reliable results, achieving a high F1-score(0.88) and an AUC of about 0.99.
