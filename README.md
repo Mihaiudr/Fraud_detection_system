@@ -30,3 +30,6 @@ Because the dataset is extremely imbalanced, additional techniques such as scale
 # Best Model
 
 After comparing all models on the validation and test sets, XGBoost delivered the most balanced and reliable results, achieving a high F1-score(0.88) and an AUC of about 0.99.
+
+# Live Demo (Streamlit App)
+https://fraudetectionmodels.streamlit.app/
