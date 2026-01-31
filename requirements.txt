@@ -1,0 +1,35 @@
+# Core
+pandas
+numpy
+scikit-learn
+scipy
+statsmodels
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# ML models
+xgboost
+imbalanced-learn
+
+# Explainability
+shap
+lime
+
+# App
+streamlit
+
+# Notebook
+jupyter
+ipykernel
+notebook
+
+# Utilities
+tqdm
+joblib
+cloudpickle
+
+# Optional experiment tracking
+mlflow
