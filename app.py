@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-from tensorflow.keras.models import load_model
+#from tensorflow.keras.models import load_model
 from sklearn.metrics import (
     classification_report,
     roc_curve,
@@ -33,13 +33,13 @@ try:
     rf_model = joblib.load("models/random_forest.joblib")
     xgb_model = xgb.XGBClassifier()
     xgb_model.load_model("models/xgboost_model.json")
-    mlp_model = load_model("models/mlp.keras")
+   # mlp_model = load_model("models/mlp.keras", compile=False)
 
     MODELS = {
         "Logistic Regression": lr_model,
         "Random Forest": rf_model,
         "XGBoost": xgb_model,
-        "MLP - Deep Learning": mlp_model
+       # "MLP - Deep Learning": mlp_model
     }
 except Exception as e:
     st.error(f"Error loading models: {e}. Ensure model files are in the root directory.")
