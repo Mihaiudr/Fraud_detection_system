@@ -1,16 +1,14 @@
-# Fraud Detection Model Evaluation
+# Fraud Detection System
 
 This project focuses on detecting **fraudulent credit card transactions** using the **PaySim synthetic financial dataset**.  
 The objective is to **build, compare, and evaluate multiple machine learning models** and identify the most effective approach for **highly imbalanced data**.
 
 A live **Streamlit dashboard** is included to interactively explore model performance.
 
----
 
 ## Live Demo (Streamlit App)
-👉 https://fraudetectionmodels.streamlit.app/
+https://fraudetectionmodels.streamlit.app/
 
----
 
 ## Dataset
 The dataset used in this project is the **PaySim Synthetic Financial Dataset for Fraud Detection**, containing over **6 million simulated transactions**.
@@ -23,7 +21,6 @@ The dataset used in this project is the **PaySim Synthetic Financial Dataset for
 
 The dataset is **extremely imbalanced**, closely resembling real-world financial transaction data.
 
----
 
 ## Project Overview
 The project notebook covers the complete machine learning workflow:
@@ -47,8 +44,6 @@ To address class imbalance, multiple techniques were explored, including:
 - `scale_pos_weight`
 - SMOTE
 
----
-
 ## Best Performing Model
 After evaluating all models on validation and test sets, **XGBoost** demonstrated the most **balanced and reliable performance**, achieving:
 
@@ -57,7 +52,6 @@ After evaluating all models on validation and test sets, **XGBoost** demonstrate
 
 This model showed the best trade-off between **precision and recall** for fraud detection.
 
----
 
 ## Streamlit Dashboard
 The Streamlit application allows users to:
