@@ -1,29 +1,66 @@
-# Fraud Detection Model
+# Fraud Detection System
 
-This project focuses on detecting fraudulent transactions in the well-known credit card fraud dataset. The goal was to build and compare several machine learning models and select the one that performs best on highly imbalanced data.
+This project focuses on detecting **fraudulent credit card transactions** using the **PaySim synthetic financial dataset**.  
+The objective is to **build, compare, and evaluate multiple machine learning models** and identify the most effective approach for **highly imbalanced data**.
 
-# Dataset
+A live **Streamlit dashboard** is included to interactively explore model performance.
 
-The dataset used in this project is the Paysim Synthetic Financial Dataset for  Fraud Detection, with more than 6 million transactions,  available on Kaggle:
-https://www.kaggle.com/datasets/ealaxi/paysim1
 
-# Overview
+## Live Demo (Streamlit App)
+https://fraudetectionmodels.streamlit.app/
 
-The notebook includes the full workflow:
 
-data loading and preprocessing
+## Dataset
+The dataset used in this project is the **PaySim Synthetic Financial Dataset for Fraud Detection**, containing over **6 million simulated transactions**.
 
-handling class imbalance
+- Source: Kaggle  
+  https://www.kaggle.com/datasets/ealaxi/paysim1
+- Target variable:
+  - `0` → Not Fraud
+  - `1` → Fraud
 
-training multiple models (Logistic Regression, Random Forest, XGBoost)
+The dataset is **extremely imbalanced**, closely resembling real-world financial transaction data.
 
-hyperparameter tuning
 
-evaluation using precision, recall, F1-score, ROC curve and AUC
+## Project Overview
+The project notebook covers the complete machine learning workflow:
 
-Because the dataset is extremely imbalanced, additional techniques such as scale_pos_weight, undersampling and SMOTE were tested to improve minority-class performance.
+- Data loading and preprocessing  
+- Exploratory data analysis (EDA)  
+- Feature engineering  
+- Handling class imbalance  
+- Training multiple models:
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+  - Multi-Layer Perceptron (MLP)
+- Hyperparameter tuning  
+- Model evaluation using:
+  - Precision, Recall, F1-score
+  - ROC Curve & AUC
+  - Confusion Matrix
 
-# Best Model
+To address class imbalance, multiple techniques were explored, including:
+- `scale_pos_weight`
+- SMOTE
 
-After comparing all models on the validation and test sets, XGBoost delivered the most balanced and reliable results, achieving a high F1-score(0.91) and an AUC of about 0.97. This model was selected as the final approach for fraud detection.
-"# Fraud_detection_system" 
+## Best Performing Model
+After evaluating all models on validation and test sets, **XGBoost** demonstrated the most **balanced and reliable performance**, achieving:
+
+- **F1-score:** ~0.88  
+- **ROC-AUC:** ~0.99  
+
+This model showed the best trade-off between **precision and recall** for fraud detection.
+
+
+## Streamlit Dashboard
+The Streamlit application allows users to:
+
+- Load a built-in demo dataset or upload a custom CSV
+- Compare multiple fraud detection models
+- Visualize performance through:
+  - ROC curves
+  - Precision–Recall curves
+  - Confusion matrices
+- Export predictions with fraud probabilities
+
