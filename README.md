@@ -6,8 +6,9 @@ The objective is to **build, compare, and evaluate multiple machine learning mod
 A live **Streamlit dashboard** is included to interactively explore model performance.
 
 
-## Live Demo (Streamlit App)
+## Live Demo (Streamlit App) - Please wait a few minutes 
 https://fraudetectionmodels.streamlit.app/
+⚠️ Note: The app may take 1–2 minutes to load if it has been inactive.
 
 
 ## Dataset
